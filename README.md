@@ -5,7 +5,7 @@ Very simple and easy When I Work API wrapper, for PHP.
 
 Complex wrappers are for noobs. This lets you access the When I Work API using the docs as directly as possible.
 
-Requires PHP 5.3 and a pulse.
+Requires PHP 5.4 and a pulse.
 
 Installation
 ------------
@@ -44,11 +44,11 @@ Create a new shift
 
 ```php
 $wiw = new Wheniwork('api-token-here');
-$result = $wiw->create('users', array(
+$result = $wiw->create('users', [
                 'email'             => 'nicole.jones@example.com',
                 'first_name'        => 'Nicole',
                 'last_name'         => 'Jones',
                 'phone_number'      => '+16515559009'
-            ));
+            ]);
 print_r($result);
 ```
